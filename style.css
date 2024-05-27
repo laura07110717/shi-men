@@ -34,7 +34,7 @@
 .top-title{
     
     color: rgb(156, 224, 104);
-    position: absolute;
+    position: relative;
     top: 120px;
     left :40px;
     width:100%;
