@@ -13,7 +13,7 @@
     color:wheat;
     font-family:"DFKai-sb";
 }
-.container{
+/*.container{
     position: relative;
     top: 200px;
     left:40px;
@@ -26,6 +26,16 @@
     left:12px;
     display:flex;
     flex-direction: row;
+}
+*/
+.col {
+    float: left;
+    width: 20%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 .card{
     margin-left: -20px;
