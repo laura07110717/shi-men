@@ -59,16 +59,18 @@
 }
 .back{
 
-    background-color: darkseagreen;
-    color:darkgreen;
+    background-color: rgb(251, 243, 213);
+    color:rgb(156, 175, 170);
     position:absolute;
-    bottom:30px;
-    margin-left: 50px;
+    bottom:5vh;
+    left:5vh;
     border: none;
+    padding: 2.5vh 4vh;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 28px;
+    font-size: 3vh;
+    border-radius: 10%;
 }
 .all{
     background-color: bisque;
