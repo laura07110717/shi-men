@@ -79,6 +79,64 @@
                 overflow: hidden; 
                 font-family: Microsoft JhengHei;
             }
+            .btn1 {
+                position: relative;
+                color: #111111;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: none;
+                transition: all 0.2s ease;
+                padding: 12px 20px;
+                display: inline-flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .btn1:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                border-radius: 28px;
+                background: rgb(178, 200, 186);
+                width: 56px;
+                height: 56px;
+                transition: all 0.3s ease;
+            }
+            .btn1 span {
+                position: relative;
+                z-index: 1;
+            }
+            .btn1 svg {
+                position: relative;
+                top: 0;
+                margin-left: 10px;
+                fill: none;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke: #111111;
+                stroke-width: 2;
+                transform: translateX(-5px);
+                transition: all 0.3s ease;
+            }
+            .btn1:hover:before {
+                width: 100%;
+                background: rgb(178, 200, 186);
+            }
+            .btn1:hover svg {
+                transform: translateX(0);
+            }
+            .btn1:hover,
+            .btn1:focus {
+                color: #111111;
+            }
+            .btn1:active {
+                color: #111111;
+                transform: scale(0.96);
+            }
         </style>
     </head>
     <body>
@@ -137,7 +195,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                 <h5 class="card-title">國賓大戲院</h5>
                 <p class="card-text">三個國際級影廳，撥放各種電影</p>
-                <a href="cinema.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                <a href="cinema.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -145,7 +209,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">頂級豬排<br>密室逃脫<br>康定館</h5>
                   <p class="card-text">多款密室逃脫遊戲，適合新手到老手</p>
-                  <a href="escape.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                  <a href="escape.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -153,7 +223,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                     <h5 class="card-title">卡夾布列島<br>西門店娃娃機</h5>
                     <p class="card-text">很容易出貨的夾娃娃機店，同時也是網美景點</p>
-                    <a href="doll.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                    <a href="doll.html" class="btn1" >
+                        <span>店家簡介</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -161,7 +237,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                     <h5 class="card-title">湯姆熊<br>歡樂世界<br>金萬年加盟店</h5>
                     <p class="card-text">各種遊戲機台，有釣魚、賽車、推幣機等等</p>
-                    <a href="Tom'sWorld.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                    <a href="doll.html" class="btn1" >
+                        <span>店家簡介</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -169,7 +251,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                     <h5 class="card-title">Snapshot<br>韓式拍貼機<br>妞拍貼西門店</h5>
                     <p class="card-text">有韓系制服可供租借，每一間的背景顏色不同(拍貼)</p>
-                    <a href="photo.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                    <a href="photo.html" class="btn1" >
+                        <span>店家簡介</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -182,7 +270,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                     <h5 class="card-title">PAZZO<br>西門店</h5>
                     <p class="card-text">賣衣服和飾品，裝潢別具特色</p>
-                    <a href="PAZZO_ximen.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                    <a href="PAZZO_ximen.html" class="btn1" >
+                        <span>店家簡介</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -190,7 +284,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                     <h5 class="card-title">UNIQLO<br>西門店</h5>
                     <p class="card-text">平價日式服飾</p>
-                    <a href="UNIQLO_XIMEN.html"   class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                    <a href="UNIQLO_XIMEN.html" class="btn1" >
+                        <span>店家簡介</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -198,7 +298,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                     <h5 class="card-title">誠品生活<br>西門店</h5>
                     <p class="card-text">書籍300元左右 其他類別價格不一定</p>
-                    <a href="eslite_ximen.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                    <a href="eslite_ximen.html" class="btn1" >
+                        <span>店家簡介</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -206,7 +312,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                     <h5 class="card-title">DON DON DONKI<br>西門店</h5>
                     <p class="card-text">專門賣日貨的地方，類似日式雜貨店</p>
-                    <a href="DON_DON_DONKI_XIMEN.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                    <a href="DON_DON_DONKI_XIMEN.html" class="btn1" >
+                        <span>店家簡介</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -214,7 +326,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                     <h5 class="card-title">無印良品<br>誠品西門門市</h5>
                     <p class="card-text">日式風格的購物商場</p>
-                    <a href="MUJI_ximen.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                    <a href="MUJI_ximen.html" class="btn1" >
+                        <span>店家簡介</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -227,7 +345,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">肉多多火鍋</h5>
                   <p class="card-text">連鎖火鍋品牌</p>
-                  <a href="/shi-men-search/restuarant/restuarant1.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                  <a href="/shi-men-search/restuarant/restuarant1.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -235,7 +359,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">蜂大咖啡</h5>
                   <p class="card-text">老牌咖啡廳</p>
-                  <a href="/shi-men-search/restuarant/restuarant2.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                  <a href="/shi-men-search/restuarant/restuarant2.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -243,7 +373,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">旺角迷你<br>石頭火鍋</h5>
                   <p class="card-text">熱門火鍋店</p>
-                  <a href="/shi-men-search/restuarant/restuarant3.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                  <a href="/shi-men-search/restuarant/restuarant3.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -251,7 +387,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">幸福搖搖<br>西門一號店</h5>
                   <p class="card-text">創意飲品店</p>
-                  <a href="/shi-men-search/restuarant/restuarant4.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                  <a href="/shi-men-search/restuarant/restuarant4.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -259,7 +401,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">一甲子餐飲<br>祖師焢肉飯<br>、刈包</h5>
                   <p class="card-text">古早味台灣街頭小吃</p>
-                  <a href="/shi-men-search/restuarant/restuarant5.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                  <a href="/shi-men-search/restuarant/restuarant5.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -271,15 +419,27 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">美觀園<br>日式料理</h5>
                   <p class="card-text">日式料理老店，價格實惠</p>
-                  <a href="/shi-men-search/restuarant/restuarant6.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
-                </div>
+                  <a href="/shi-men-search/restuarant/restuarant6.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+            </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="/shi-men-search/restuarant/res7ph1.jpg" class="card-img-top" alt=" ">
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">Nonsence<br>Cafe & Bar<br>無心戒酒<br>互助會</h5>
                   <p class="card-text">打造年輕聖地的獨特品酒文化，以酒會友的酒吧</p>
-                  <a href="/shi-men-search/restuarant/restuarant7.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                  <a href="/shi-men-search/restuarant/restuarant7.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -287,7 +447,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">老天祿滷味</h5>
                   <p class="card-text">老牌滷味店</p>
-                  <a href="/shi-men-search/restuarant/restuarant8.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                  <a href="/shi-men-search/restuarant/restuarant8.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -295,7 +461,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">天天利美食坊</h5>
                   <p class="card-text">熱門小吃，招牌滷肉飯</p>
-                  <a href="/shi-men-search/restuarant/restuarant9.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                  <a href="/shi-men-search/restuarant/restuarant9.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -303,7 +475,13 @@
                 <div class="card-body" style="background-color:rgb(235, 243, 232)">
                   <h5 class="card-title">喜多鍋</h5>
                   <p class="card-text">主打現撈頂級海鮮的深夜火鍋</p>
-                  <a href="/shi-men-search/restuarant/restuarant10.html" class="btn btn-primary" style="background-color: rgb(178, 200, 186); border-color:rgb(178, 200, 186);" >店家簡介</a>
+                  <a href="/shi-men-search/restuarant/restuarant10.html" class="btn1" >
+                    <span>店家簡介</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </a>
                 </div>
             </div>
 
