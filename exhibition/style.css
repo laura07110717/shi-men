@@ -5,13 +5,12 @@
     padding-bottom: 20px;
     text-align:center;
     color:rgba(194, 84, 53, 0.742);
-    font-family:"DFKai-sb";
 }
 
 .whitefont{
     text-align:center;
     color:wheat;
-    font-family:"DFKai-sb";
+    
 }
 .container{
     position: absolute;
@@ -31,7 +30,7 @@
     top: 120px;
     left :40px;
     width:100%;
-    font-family:"DFKai-sb";
+    
     font-size:30px;
     box-sizing: border-box;
 }
@@ -42,7 +41,7 @@
     top: 415px;
     left :0px;
     width:100%;
-    font-family:"DFKai-sb";
+    
     font-size:30px;
     box-sizing: border-box;
 }
@@ -53,7 +52,7 @@
     top: 430px;
     left :0px;
     width:100%;
-    font-family:"DFKai-sb";
+
     font-size:30px;
     box-sizing: border-box;
 }
